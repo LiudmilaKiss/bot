@@ -1,0 +1,12 @@
+# создаем виртуальное окружение, если нет
+$ python3 -m venv .telegram --prompt TelegramBot
+# активируем виртуальное окружение 
+$ source .telegram/bin/activate
+# ставим последнюю многопоточную версию python-telegram-bot
+(TelegramBot):~$ python3 -m pip install python-telegram-bot==13.14 -U
+# или установка асинхронной версии 
+# (на октябрь 2022 находится в предрелизе)
+(TelegramBot):~$ python3 -m pip install python-telegram-bot -U --pre
+# в дальнейшем установка асинхронной 
+# версии будет доступна по умолчанию
+(TelegramBot):~$ python3 -m pip install python-telegram-bot -U
